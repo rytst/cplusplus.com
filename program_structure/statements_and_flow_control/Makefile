@@ -1,4 +1,4 @@
-all: the_while_loop the_do_while_loop
+all: the_while_loop the_do_while_loop the_for_loop
 
 the_while_loop: the_while_loop.cpp
 	g++ -std=c++0x the_while_loop.cpp -o the_while_loop
@@ -6,5 +6,8 @@ the_while_loop: the_while_loop.cpp
 the_do_while_loop: the_do_while_loop.cpp
 	g++ -std=c++0x the_do_while_loop.cpp -o the_do_while_loop
 
+the_for_loop: the_for_loop.cpp
+	g++ -std=c++0x the_for_loop.cpp -o the_for_loop
+
 clean:
-	rm the_while_loop the_do_while_loop
+	rm the_while_loop the_do_while_loop the_for_loop
