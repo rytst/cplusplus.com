@@ -1,4 +1,4 @@
-all: function_example void_function_example the_return_value_of_main passing_parameters_by_reference default_values_in_parameters declaring_functions
+all: function_example void_function_example the_return_value_of_main passing_parameters_by_reference default_values_in_parameters declaring_functions recursivity
 
 function_example: function_example.cpp
 	g++ -std=c++0x function_example.cpp -o function_example
@@ -18,5 +18,8 @@ default_values_in_parameters: default_values_in_parameters.cpp
 declaring_functions: declaring_functions.cpp
 	g++ -std=c++0x declaring_functions.cpp -o declaring_functions
 
+recursivity: recursivity.cpp
+	g++ -std=c++0x recursivity.cpp -o recursivity
+
 clean:
-	rm function_example void_function_example the_return_value_of_main passing_parameters_by_reference default_values_in_parameters declaring_functions
+	rm function_example void_function_example the_return_value_of_main passing_parameters_by_reference default_values_in_parameters declaring_functions recursivity
