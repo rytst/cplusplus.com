@@ -2,24 +2,25 @@
 
 using namespace std;
 
-// Overloaded functions may have the same definition.
 
-int sum(int a, int b)
+template <class T>
+T sum(T a, T b)
 {
-    return a + b;
-}
-
-
-double sum(double a, double b)
-{
-    return a + b;
+	T result;
+	result = a + b;
+    return result;
 }
 
 
 int main()
 {
-    cout << sum(10,  20)  << endl;
-	cout << sum(1.0, 1.5) << endl;
+	int    i = 5,   j = 6,   k;
+	double f = 2.0, g = 0.5, h;
+	k = sum<int>(i, j);
+	h = sum<double>(f, g);
 
-	return 0;
+	cout << k << endl;
+	cout << h << endl;
+
+    return 0;
 }
