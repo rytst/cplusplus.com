@@ -16,13 +16,12 @@ namespace second
 
 int main()
 {
-    using first::x;
-    using second::y;
+    using namespace first;
 
     cout << x << endl;
     cout << y << endl;
 
     cout << second::x << endl;
-    cout << first::y  << endl;
+    cout << second::y  << endl;
     return 0;
 }
